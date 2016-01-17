@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+
+<!--[if !IE]><!-->
+
+<html lang="en">
+
+<!--<![endif]-->
+<head>
+<!-- BEGIN HEAD -->
+<title>BattleWarriors | NodeJS</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css"/>
+	<link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<link href="/assets/css/components-rounded.css" id="style_components" rel="stylesheet" type="text/css"/>
+	<link href="/assets/css/layout.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<!-- END HEAD -->
+
+<!-- BEGIN BODY -->
+<body>
+<div class="page-header iheader">
+	<!-- BEGIN HEADER TOP -->
+	<div class="page-header-top">
+		<div class="container">
+			<!-- BEGIN LOGO -->
+			<div class="page-logo">
+				<a href="/index" style='color:#45B6AF;text-decoration:none;'>
+					<h1>BattleWarriors</h1>
+				</a>
+			</div>
+			<!-- END LOGO -->
+			<!-- BEGIN RESPONSIVE MENU TOGGLER -->
+			<a href="javascript:;" class="menu-toggler"></a>
+			<!-- END RESPONSIVE MENU TOGGLER -->
+			<!-- BEGIN TOP NAVIGATION MENU -->
+            <div class="top-menu">
+				
+			</div>
+			<!-- END TOP NAVIGATION MENU -->
+		</div>
+	</div>
+	<!-- END HEADER TOP -->
+	<!-- BEGIN HEADER MENU -->
+	<div class="page-header-menu">
+		<div class="container">
+			<div class="hor-menu ">
+				<ul class="nav navbar-nav">
+                    <li class="active">
+                    	<a href="/">Main page</a>
+                    </li>
+				</ul>
+			</div>
+			<!-- END MEGA MENU -->
+		</div>
+	</div>
+	<!-- END HEADER MENU -->
+</div>
+<!-- BEGIN PAGE CONTAINER -->
+<div class="page-container">
+	<div class="page-content icontainer">
+		<div class="container">
+			<!-- BEGIN PAGE CONTENT INNER -->
+            <div class="row">
+				<div class="col-md-12">
+					<!-- BEGIN EXAMPLE TABLE PORTLET-->
+					<div class="portlet light">
+						<div class="portlet-title tabbable-line">
+							<div class="caption">
+								<span class="caption-subject font-green-sharp bold uppercase">Heroes</span>
+                                <span class="caption-helper">[GET] /heroes</span>
+							</div>
+                            <div class="tools">
+                            	<button class="btn btn-sm btn-default" id="heroes_refresh">Refresh</button>
+                                <button class="btn btn-sm btn-default" id="priest_add"><i class="fa fa-plus"></i> Priest</button>
+                                <button class="btn btn-sm btn-default" id="warrior_add"><i class="fa fa-plus"></i> Warrior</button>
+                            </div>
+						</div>
+						<div class="portlet-body">
+                        	<table class="table table-hover table-striped" id="heroes">                                                       
+                            	<thead>
+                                	<tr>
+                                    	<th>
+                                        	Id
+                                        </th>
+                                        <th>
+                                        	Type
+                                        </th>
+                                        <th>
+                                        	Life
+                                        </th>
+                                        <th>
+                                        	Weapon
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                
+                                </tbody>
+                            </table>
+						</div>                  
+					</div>
+				</div>
+			</div>
+            
+            <div class="row">
+				<div class="col-md-12">
+					<!-- BEGIN EXAMPLE TABLE PORTLET-->
+					<div id='alert-before' class="portlet light">
+						<div class="portlet-title">
+							<div class="caption">
+								<i class="fa fa-tv font-green-sharp"></i>
+								<span class="caption-subject font-green-sharp bold uppercase">Console</span>
+							</div>
+							<div class="tools">
+                            	
+							</div>
+						</div>
+						<div class="portlet-body">
+                        	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        
+	</div>
+	<!-- END PAGE CONTENT -->
+</div>
+<div class="page-footer ifooter">
+        <div class="container">
+             2015 &copy; Steiner Dániel. All rights reserved.
+        </div>
+        <div style='float:right;margin-right:50px;'><? //= systemLoadInPercent(getSystemCores(),1)."% load: ".$load[0]; ?></div>
+    </div>
+</body>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/layout.js"></script>
+</html>
